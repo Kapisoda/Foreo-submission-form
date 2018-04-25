@@ -1,0 +1,75 @@
+ body {
+     background: url(../img/future.jpg) no-repeat center center fixed;
+     background-size: cover;
+     font-family: 'Roboto Mono', monospace;
+ }
+ 
+ .align-center {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+ }
+ 
+ .headline {
+     font-family: 'Orbitron', sans-serif;
+     text-shadow: 0 0 15px rgb(0, 255, 255);
+     color: rgb(0, 255, 255);
+ }
+ 
+ .img-logo {
+     height: auto;
+     width: 200px;
+     padding-top: 20px;
+     padding-bottom: 40px;
+ }
+ 
+ form {
+     width: 400px;
+     border: 2px solid rgb(141, 202, 255);
+     /*margin: 0 auto;*/
+     background-color: rgb(0, 15, 37);
+     -webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+     box-shadow: 0 0 15px rgb(0, 255, 255);
+     color: rgb(141, 202, 255);
+     margin: 0 10px;
+ }
+ 
+ form input[type],
+ form select {
+     -webkit-box-shadow: none !important;
+     box-shadow: none !important;
+     background-color: rgb(0, 15, 37);
+     border: 0;
+     border-bottom: 2px solid rgb(56, 107, 150);
+     color: rgb(0, 255, 255);
+ }
+ 
+ form input[type]:focus,
+ form select:focus {
+     outline: none;
+     background-color: rgb(0, 15, 37);
+     border: 0;
+     border-bottom: 2px solid rgb(0, 255, 255);
+ }
+ 
+ form input[type]::-webkit-input-placeholder {
+     color: rgb(56, 107, 150);
+ }
+ 
+ form input[type]:-ms-input-placeholder {
+     color: rgb(56, 107, 150);
+ }
+ 
+ form input[type]::placeholder {
+     color: rgb(56, 107, 150);
+ }
+ 
+ form label {
+     color: rgb(56, 107, 150);
+ }
