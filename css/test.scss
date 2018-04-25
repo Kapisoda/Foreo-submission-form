@@ -1,0 +1,131 @@
+/*--------------------------------------------BODY----------------------------------------------*/
+
+body {
+    background: url(../img/future.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+/*-------------------------------------------COMPONENTS----------------------------------------------*/
+
+.align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.headline {
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0 0 15px rgb(0, 255, 255);
+    color: rgb(0, 255, 255);
+}
+
+.img-logo {
+    height: auto;
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+/*-------------------------------------------FORM----------------------------------------------*/
+
+form {
+    width: 400px;
+    border: 2px solid rgb(141, 202, 255);
+    /*margin: 0 auto;*/
+    background-color: rgb(0, 15, 37);
+    -webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+    box-shadow: 0 0 15px rgb(0, 255, 255);
+    color: rgb(141, 202, 255);
+    margin: 0 10px;
+    padding: 20px 0;
+}
+
+
+/*form input[type],
+form select*/
+
+.lightsaber-input {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: rgb(0, 15, 37);
+    border: 0;
+    border-bottom: 2px solid rgb(56, 107, 150);
+    color: rgb(0, 255, 255);
+    &:focus {
+        outline: none;
+        background-color: rgb(0, 15, 37);
+        border: 0;
+        border-bottom: 2px solid rgb(0, 255, 255);
+    }
+}
+
+
+/*form input[type]:focus,
+form select:focus */
+
+form {
+    input[type] {
+        &::-webkit-input-placeholder,
+        &:-ms-input-placeholder,
+        &::placeholder {
+            color: rgb(56, 107, 150);
+        }
+    }
+    label {
+        color: rgb(56, 107, 150);
+    }
+}
+
+
+/*-------------------------------------------CHECKBOX----------------------------------------------*/
+
+.checkbox-container {
+    vertical-align: bottom;
+}
+
+
+/*-------------------------------------------BUTTON----------------------------------------------*/
+
+.button-submit {
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 10px 30px;
+        text-decoration: none;
+        font-weight: 400;
+        -webkit-transition: background-color 0.3s, color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
+        margin: 10px 15px 0 0;
+        background-color: #682860;
+        color: #00ffff;
+        border: 1px solid #682860;
+        text-transform: uppercase;
+    }
+    &:hover,
+    &:active {
+        background-color: #64145a;
+        border: 1px solid rgb(0, 255, 255);
+        -webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
+        box-shadow: 0 0 15px rgb(0, 255, 255);
+    }
+}
+
+
+/*----------------------------------------ERRORS-----------------------------------------------*/
+
+.input-error {
+    border-bottom: 2px solid red;
+}
+
+span {
+    color: red;
+}
