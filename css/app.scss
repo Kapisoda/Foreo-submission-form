@@ -1,3 +1,11 @@
+/*colors*/
+
+$dark-blue-background-color: rgb(0, 15, 37);
+$green-lightsaber-text-color: rgb(0, 255, 255);
+$blue-placeholder-color: rgb(56, 107, 150);
+$error-color: rgb(255, 21, 21);
+$purple-button-color: rgb(100, 20, 90);
+
 /*--------------------------------------------BODY----------------------------------------------*/
 
 body {
@@ -23,8 +31,8 @@ body {
 
 .headline {
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 0 0 15px rgb(0, 255, 255);
-    color: rgb(0, 255, 255);
+    text-shadow: 0 0 15px $green-lightsaber-text-color;
+    color: $green-lightsaber-text-color;
 }
 
 .img-logo {
@@ -40,48 +48,40 @@ body {
 form {
     width: 400px;
     border: 2px solid rgb(141, 202, 255);
-    /*margin: 0 auto;*/
-    background-color: rgb(0, 15, 37);
-    -webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
-    box-shadow: 0 0 15px rgb(0, 255, 255);
+    background-color: $dark-blue-background-color;
+    -webkit-box-shadow: 0 0 15px $green-lightsaber-text-color;
+    box-shadow: 0 0 15px $green-lightsaber-text-color;
     color: rgb(141, 202, 255);
     margin: 0 10px;
     padding: 20px 0;
 }
 
-
-/*form input[type],
-form select*/
-
 .lightsaber-input {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    background-color: rgb(0, 15, 37);
+    background-color: $dark-blue-background-color;
     border: 0;
-    border-bottom: 2px solid rgb(56, 107, 150);
-    color: rgb(0, 255, 255);
+    border-bottom: 2px solid $blue-placeholder-color;
+    color: $green-lightsaber-text-color;
     &:focus {
         outline: none;
-        background-color: rgb(0, 15, 37);
+        background-color: $dark-blue-background-color;
         border: 0;
-        border-bottom: 2px solid rgb(0, 255, 255);
+        border-bottom: 2px solid $green-lightsaber-text-color;
     }
 }
 
-
-/*form input[type]:focus,
-form select:focus */
-
 form {
     input[type] {
+        &::placeholder,
         &::-webkit-input-placeholder,
         &:-ms-input-placeholder,
-        &::placeholder {
-            color: rgb(56, 107, 150);
+        {
+            color: $blue-placeholder-color;
         }
     }
     label {
-        color: rgb(56, 107, 150);
+        color: $blue-placeholder-color;
     }
 }
 
@@ -92,30 +92,31 @@ form {
     vertical-align: bottom;
 }
 
+.checkmark {
+    display: inline-block;
+}
+
 
 /*-------------------------------------------BUTTON----------------------------------------------*/
 
 .button-submit {
-    &:link,
-    &:visited {
-        display: inline-block;
-        padding: 10px 30px;
-        text-decoration: none;
-        font-weight: 400;
-        -webkit-transition: background-color 0.3s, color 0.3s;
-        transition: background-color 0.3s, color 0.3s;
-        margin: 10px 15px 0 0;
-        background-color: #682860;
-        color: #00ffff;
-        border: 1px solid #682860;
-        text-transform: uppercase;
-    }
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 400;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 10px 15px 0 0;
+    background-color: $purple-button-color;
+    color: $green-lightsaber-text-color;
+    border: 1px solid $purple-button-color;
+    text-transform: uppercase;
     &:hover,
     &:active {
         background-color: #64145a;
-        border: 1px solid rgb(0, 255, 255);
-        -webkit-box-shadow: 0 0 15px rgb(0, 255, 255);
-        box-shadow: 0 0 15px rgb(0, 255, 255);
+        border: 1px solid $green-lightsaber-text-color;
+        -webkit-box-shadow: 0 0 15px $green-lightsaber-text-color;
+        box-shadow: 0 0 15px $green-lightsaber-text-color;
     }
 }
 
@@ -123,9 +124,12 @@ form {
 /*----------------------------------------ERRORS-----------------------------------------------*/
 
 .input-error {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid $error-color;
 }
 
 span {
-    color: red;
+    display: inline-block;
+    float: right;
+    color: $error-color;
+    font-size: 80%;
 }
