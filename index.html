@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i,400,400i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--<link rel="stylesheet" href="intl-tel-input-master/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="intl-tel-input-master/build/css/demo.css"> -->
 </head>
 
 <body>
@@ -36,32 +40,34 @@
                     <div class="grid-container ">
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="name">Name<span id="spanName"></span></label>
-                                <input class="lightsaber-input" name="name" id="name" type="text" placeholder="Your name.." required>
+                                <label class="requared-input-field" for="name">Name<span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Name" id="name" type="text" placeholder="Your name.." required>
+
                             </div>
                         </div>
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="email">Email <span id="spanEmail"></span></label>
-                                <input class="lightsaber-input" name="email" id="email" type="email" placeholder="Your email.." required>
+                                <label class="requared-input-field" for="email">Email<span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Email" id="email" type="email" placeholder="Your email.." required>
                             </div>
                         </div>
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="password">Password <span id="spanPassword"></span></label>
-                                <input class="lightsaber-input" name="password" id="password" type="password" placeholder="Your Password.." required>
+                                <label class="requared-input-field" for="password">Password<span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Password" id="password" type="password" placeholder="Your Password.." required>
                             </div>
                         </div>
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="confirmPassword">Confirm Password<span id="spanConfirmPassword"></span></label>
-                                <input class="lightsaber-input" name="confirmPassword" id="confirmPassword" type="password" placeholder="Confirm your password" required>
+                                <label class="requared-input-field" for="confirmPassword">Confirm Password<span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Confirm password" id="confirmPassword" type="password" placeholder="Confirm your password" required>
+                                <i id="icon-btn" class="material-icons icon-btn-inactive btn">remove_red_eye</i>
                             </div>
                         </div>
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="birthDate">Birth date <span id="spanBirthDate"></span></label>
-                                <input class="lightsaber-input" name="birthDate" id="birthDate" type="date">
+                                <label for="birthDate">Birth date <span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Birth date" id="birthDate" type="date">
                             </div>
                         </div>
                         <div class="grid-x">
@@ -77,8 +83,8 @@
                         </div>
                         <div class="grid-x">
                             <div class="cell small-12">
-                                <label for="phoneNumber">Phone number<span id="spanPhoneNumber"></span></label>
-                                <input class="lightsaber-input" name="phoneNumber" id="phoneNumber" type="tel" placeholder="Your phone number..">
+                                <label for="phoneNumber">Phone number<span class="error-text"></span></label>
+                                <input class="lightsaber-input" name="Phone number" id="phoneNumber" type="tel" placeholder="Your phone number..">
                             </div>
                         </div>
                         <div class="grid-x">
@@ -86,7 +92,6 @@
                                 <label class="checkbox-container">
                                     <input type="checkbox" checked="checked">
                                     <div class="checkmark">Subscribe to newsletter</div>
-                                    <p></p>
                                 </label>
                             </div>
                         </div>

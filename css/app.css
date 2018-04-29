@@ -51,6 +51,22 @@ form {
     padding: 20px 0;
 }
 
+form input[type]::-webkit-input-placeholder {
+    color: #386b96;
+}
+
+form input[type]:-ms-input-placeholder {
+    color: #386b96;
+}
+
+form input[type]::placeholder {
+    color: #386b96;
+}
+
+form label {
+    color: #386b96;
+}
+
 .lightsaber-input {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -67,20 +83,8 @@ form {
     border-bottom: 2px solid cyan;
 }
 
-form input[type]::-webkit-input-placeholder {
-    color: #386b96;
-}
-
-form input[type]:-ms-input-placeholder {
-    color: #386b96;
-}
-
-form input[type]::placeholder {
-    color: #386b96;
-}
-
-form label {
-    color: #386b96;
+.requared-input-field:after {
+    content: "*";
 }
 
 
@@ -126,9 +130,32 @@ form label {
     border-bottom: 2px solid #ff1515;
 }
 
-span {
+.error-text {
     display: inline-block;
     float: right;
     color: #ff1515;
-    font-size: 80%;
+    font-size: 75%;
+}
+
+
+/*-----------------------------------------ICONS-------------------------------------------------*/
+
+.btn {
+    cursor: pointer;
+}
+
+.icon-btn-inactive {
+    color: #386b96;
+}
+
+.icon-btn-inactive:hover {
+    color: cyan;
+}
+
+.icon-btn-active {
+    color: cyan;
+}
+
+.icon-btn-active:hover {
+    color: #386b96;
 }

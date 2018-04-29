@@ -54,6 +54,17 @@ form {
     color: rgb(141, 202, 255);
     margin: 0 10px;
     padding: 20px 0;
+    input[type] {
+        &::placeholder,
+        &::-webkit-input-placeholder,
+        &:-ms-input-placeholder,
+        {
+            color: $blue-placeholder-color;
+        }
+    }
+    label {
+        color: $blue-placeholder-color;
+    }
 }
 
 .lightsaber-input {
@@ -71,18 +82,8 @@ form {
     }
 }
 
-form {
-    input[type] {
-        &::placeholder,
-        &::-webkit-input-placeholder,
-        &:-ms-input-placeholder,
-        {
-            color: $blue-placeholder-color;
-        }
-    }
-    label {
-        color: $blue-placeholder-color;
-    }
+.requared-input-field:after {
+    content: "*";
 }
 
 
@@ -127,9 +128,30 @@ form {
     border-bottom: 2px solid $error-color;
 }
 
-span {
+.error-text {
     display: inline-block;
     float: right;
     color: $error-color;
-    font-size: 80%;
+    font-size: 75%;
+}
+
+
+/*-----------------------------------------ICONS-------------------------------------------------*/
+
+.btn {
+    cursor: pointer;
+}
+
+.icon-btn-inactive {
+    color: $blue-placeholder-color;
+    &:hover {
+        color: $green-lightsaber-text-color;
+    }
+}
+
+.icon-btn-active {
+    color: $green-lightsaber-text-color;
+    &:hover {
+        color: $blue-placeholder-color;
+    }
 }
