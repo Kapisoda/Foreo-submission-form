@@ -65,7 +65,6 @@ $(document).ready(function () {
 
         //form submit
         $('form').submit(function (e) {
-            alert(flagForError);
             if (flagForError == true) {
                 e.preventDefault();
             } else {
