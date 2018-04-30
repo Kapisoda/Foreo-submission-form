@@ -100,7 +100,7 @@ $(document).ready(function () {
         return pattern.test(emailAddress);
     };
 
-    /*Calculator for user years*/
+    //Calculator for user years
     function isValidBirthDate(DOB) {
         var today = new Date();
         var birthDate = new Date(DOB);
@@ -112,7 +112,7 @@ $(document).ready(function () {
         return age;
     }
 
-    /*Checking if phone number is valid*/
+    //Checking if phone number is valid
     function isValidPhone(txtPhone) {
         var pattern = new RegExp(/^[0-9-+]+$/);
         return pattern.test(txtPhone);
